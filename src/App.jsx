@@ -7,10 +7,14 @@ import './App.css'
 
 
 function App() {
-  const [images, setImages] = useState ([])
+  const [Images, setImages] = useState ([])
 
   const handleSubmit = async(term) =>{
     console.log('usted esta buscando con:', term)
+    const result = await searchImage(term)
+    
+    setImages (result)
+
   }
 
   return (
