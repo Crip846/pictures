@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-function searchBar({ onSubmit}){
-    const [term, setTerm] = useState
+function SearchBar({ onSubmit}){
+    const [term, setTerm] = useState('')
     const handleFormSubmit = (event) => {
         event.preventDefault()
         console.log('necesito decirle al componente padre sobre los datos')
@@ -22,10 +22,11 @@ function searchBar({ onSubmit}){
         <h1>Images: </h1>
         <form onSubmit={handleFormSubmit}>
             confirma tu busqueda: {term}
+            <input onChange={handleChange} value={term}/>
         </form>
         <button onClick= {handleClick}>Click me</button>
     </div>
     )
 }
 
-export default searchBar
+export default SearchBar

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import searchBar from './components/searchBar'
+import SearchBar from './components/SearchBar'
 import imageList from './components/imageList'
 import searchImage from './api'
 
@@ -16,12 +16,12 @@ function App() {
   return (
     <div>
       <h1>App</h1>
-      <searchBarc onSubmit={handleSubmit} />
+      <SearchBar onSubmit={handleSubmit} />
     </div>
   )
 }
 
-
+ 
 export default App
 
 
