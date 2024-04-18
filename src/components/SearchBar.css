@@ -1,0 +1,11 @@
+.SearcgBar{
+    border: solid lightblue;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.SearchBar form{
+    display: flex;
+    flex-direction: column;
+}
