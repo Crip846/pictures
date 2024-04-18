@@ -7,13 +7,13 @@ import './App.css'
 
 
 function App() {
-  const [Images, setImages] = useState ([])
+  const [images, setImages] = useState ([])
 
   const handleSubmit = async(term) =>{
     console.log('usted esta buscando con:', term)
     const result = await searchImage(term)
     
-    setImages (result)
+    setImages(result)
 
   }
 
@@ -21,6 +21,7 @@ function App() {
     <div>
       <h1>App</h1>
       <SearchBar onSubmit={handleSubmit} />
+      <ImageList images={images}/>
     </div>
   )
 }
